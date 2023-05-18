@@ -21,7 +21,7 @@ module.exports = {
 
         let codigo = req.params.codigo;
         let carro = await CarroService.buscarUm(codigo);
-
+        
         if(carro){
             json.result = carro;
         }
